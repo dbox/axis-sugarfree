@@ -1,0 +1,89 @@
+@import '_axis/_index.css';
+
+@apply --axis-framework;
+
+
+main {
+  /*display: flex;*/
+}
+
+aside {
+  width: 200px;
+  position: relative;
+  position: fixed;
+  background: #1f282f;
+  background: linear-gradient(-30deg,#0073d8,#9b4dca 90%);
+  color: #fff;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+aside ul {
+  @apply --reset-list;
+  width: 200px;
+
+}
+
+aside ul li a {
+  font-size: .8rem;
+  color: inherit;
+  padding: 9px 12px;
+  display: block;
+  border-bottom: 1px solid rgba(0,0,0, .2);
+
+  &:hover {
+    background: rgba(0,0,0, .08);
+  }
+}
+
+section {
+  padding: 40px 80px;
+  max-width: 900px;
+  margin-left: 200px;
+}
+
+/*Example overwrite defaults:*/
+:root {
+  /*--label-display: block;*/
+  --label-align: left;
+  --label-min-width: 200px;
+  --input-min-width: 200px;
+  --heading-size-multiplier: 1.2;
+}
+
+label {
+  padding-right: 10px;
+}
+textarea {
+  width: 400px;
+}
+p a, div a, blockquote a{
+  @apply --hover-underline;
+}
+
+.ellipsis {
+  @apply --ellipsis;
+}
+
+.inline {
+  @apply --inline-list;
+}
+
+.reset {
+  @apply --reset-list;
+}
+.inset {
+  @apply --click-inset;
+}
+
+.shrink {
+  @apply --click-shrink;
+}
+
+.down {
+  @apply --click-down;
+}
+
+.hover-pop {
+  @apply --hover-pop;
+}
