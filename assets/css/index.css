@@ -254,9 +254,9 @@ label {
 textarea {
   width: 400px;
 }
-/*p a, div a, blockquote a{
+p a, blockquote a{
   @apply --hover-underline;
-}*/
+}
 
 .ellipsis {
   @apply --ellipsis;
