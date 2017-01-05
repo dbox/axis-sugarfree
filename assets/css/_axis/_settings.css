@@ -52,6 +52,7 @@
   --input-height: auto;
   --input-padding: .4em .65em;
   --input-stroke: 1px;
+  --input-focus-inset: 1px;  
   --input-focus-color: var(--color-primary);
   --input-autofill-bg-color: var(--base-gray);
   --input-autofill-color: white;

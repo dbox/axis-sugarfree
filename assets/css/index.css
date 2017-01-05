@@ -137,7 +137,13 @@ main {
     }
   }
 }
+.form-flex {
+  display: flex;
 
+  & *:first-child {
+    flex-basis: 205px;
+  }
+}
 .intro {
   font-weight: 300;
   font-size: 26px;
