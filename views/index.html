@@ -1,313 +1,55 @@
 <extends src='layout.html'>
   <block name='content'>
-    <aside class="">
+    <header class="hero">
+      <div class="version">v2.0.1</div>      
+      <div class="github-badge"><!-- Place this tag where you want the button to render. -->
+        <a class="github-button" href="https://github.com/jescalan/axis" data-count-href="/jescalan/axis/stargazers" data-count-api="/repos/jescalan/axis#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star jescalan/axis on GitHub">Star</a>
+      </div>
+      <img src="img/axis-logo.svg" alt="">
+      <h2>A future-friendly CSS utility belt.</h2>
       <ul>
-        <li><a href="#headings">headings</a></li>
-        <li><a href="#paragraph">paragraph</a></li>
-        <li><a href="#code">code</a></li>
-        <li><a href="#pre">pre</a></li>
-        <li><a href="#small">small</a></li>
-        <li><a href="#blockquote">blockquote</a></li>
-        <li><a href="#ellipsis">ellipsis</a></li>
-        <li><a href="#unordered-list">unordered list</a></li>
-        <li><a href="#ordered-list">ordered list</a></li>
-        <li><a href="#inline-list">inline list</a></li>
-        <li><a href="#reset-list">reset list</a></li>
-        <li><a href="#button">button</a></li>
-        <li><a href="#outline-button">outline button</a></li>
-        <li><a href="#disabled-button">disabled button</a></li>
-        <li><a href="#interaction">interaction</a></li>
-        <li><a href="#inputs">form inputs</a></li>
-        <li><a href="#select-box">select</a></li>
-        <li><a href="#checkbox">checkbox</a></li>
-        <li><a href="#radio">radio</a></li>
+        <li><a href="https://axis.readme.io/docs/" target="_blank"><span></span>Docs</a></li>
+        <li><a href="kitchen-sink"><span></span>Kitchen Sink</a></li>
+        <li><a href="https://gitter.im/jescalan/axis" target="_blank"><span></span>Support</a></li>
+        <li><a href="https://github.com/jescalan/axis" target="_blank"><span></span>Github</a></li>
       </ul>
-    </aside>
-
-    <section>
-      <h3 id="headings">Headings</h3>
-
-        <h1>h1 Axis Kitchen sink</h1>
-
-        <h2>h2 Back in my quaint garden</h2>
-
-        <h3>h3 JauntyVestibulum id ligula porta felis euismod semper. Donec ullamcorper n</h3>
-
-        <h4>h4 JauntyVestibulum id ligula porta felis euismod semper. Donec ullamcorper n</h4>
-
-        <h5>h5 JauntyVestibulum id ligula porta felis euismod semper. Donec ullamcorper n</h5>
-
-        <h6>h6 JauntyVestibulum id ligula porta felis euismod semper. Donec ullamcorper n</h6>
-        <hr />
-
-        <h3 id="paragraph">Paragraph</h3>
-
-        <p>Donec <a href="#">ullamcorper nulla</a> maecenas sed diam eget risus varius blandit
-        sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec
-        ullamcorper nulla non metus auctor fringilla.</p>
-        <hr />
-
-        <h3 id="code">code</h3>
-
-        <div class="cf">
-          <p>This is an improved <code>inline code block</code>. It now flows within a
-          paragraph of text much more nicely. Lorem ipsum dolor set amit.</p>
-        </div>
-        <hr />
-
-        <h3 id="pre">pre</h3>
-        <pre>
-  pre {
-    @apply --pre
-  }</pre>
-        <hr />
-
-        <h3 id="small">small</h3>
-
-        <p class="reset-link"></p>
-
-        <p>this <a href="#">paragraph</a> is normal</p><small>This one is smal</small><br />
-        <br />
-
-        <h3 id="blockquote">blockquote</h3>
-
-        <blockquote>
-          <p>I hate when I&rsquo;m on a flight and I wake up with a water bottle next to me
-          like oh great now I gotta be responsible for this water bottle.</p><cite>Kanye
-          West</cite>
-        </blockquote>
-        <hr />
-
-        <h3 id="ellipsis">ellipsis</h3>
-
-        <div class="ellipsis">
-          Sometimes you have to truncate verbose lines, and that&rsquo;s all there is to say
-        </div>
-        <hr />
-
-        <h3 id="unordered-list">unordered list</h3>
-        <ul class="default">
-          <li>I&rsquo;m a list</li>
-
-          <li style="list-style: none; display: inline">
-            <ul>
-              <li>i&rsquo;m nested</li>
-
-              <li>cool to nest</li>
-            </ul>
-          </li>
-
-          <li>so cool to be</li>
-
-          <li>the list that I am</li>
-        </ul>
-        <hr>
-        <h3 id="ordered-list">ordered list</h3>
-
-        <ol>
-          <li>First</li>
-
-          <li>Second</li>
-
-          <li>Third</li>
-        </ol>
-        <hr>
-        <h3 id="inline-list">inline list</h3>
-        <ul class="inline">
-          <li>I&rsquo;m a list</li>
-
-          <li>so cool to be</li>
-
-          <li>the list that I am</li>
-        </ul>
-        <hr>
-
-        <h3 id="reset-list">reset list</h3>
-
-        <ul class="reset">
-          <li>I&rsquo;m a list</li>
-
-          <li>so cool to be</li>
-
-          <li>the list that I am</li>
-        </ul>
-
-        <h3 id="button">button</h3><a class="btn">Click me</a> <a class="btn large">Bigger Button</a>
-        <a class="btn small">Smaller button</a>
-
-        <h3 id="outline-button">outline button</h3><a class="btn outline">Click me</a> <a class=
-        "btn large outline">Bigger Button</a> <a class="btn small outline">Smaller button</a>
-
-        <h3 id="disabled-button">disabled button</h3><a class="btn disabled">Don&rsquo;t click me</a><br />
-
-        <h3 id="interaction">Interaction</h3><a class="btn down">click down</a> <a class="btn inset">click
-        inset</a> <a class="btn shrink">click shrink</a> <a class="btn hover-pop">hover-pop</a>
-        <a class="underline">hover-underline</a>
-        <hr />
-
-        <h3 id="inputs">Form inputs</h3>
-
-        <form>
-          <p><label for="example-input-email">Email address:</label> <input id=
-          "example-input-email" name="email" type="email" placeholder="Enter email" /></p>
-
-          <p><label for="example-input-password1">Number:</label> <input id=
-          "example-input-number" type="number" placeholder="Number" /></p>
-
-          <p><label for="example-input-password">Password:</label> <input id=
-          "example-input-password" type="password" placeholder="Password" /></p>
-
-          <p><label for="example-input-search">Search:</label> <input id="example-input-serach"
-          type="search" placeholder="Search .." /></p>
-
-          <p><label for="example-input-tel">Telephone number:</label> <input id=
-          "example-input-tel" type="tel" placeholder="Telephone number" /></p>
-
-          <p><label for="example-input-text">Text:</label> <input id="example-input-text" type=
-          "text" placeholder="Enter some text here" /></p>
-
-          <p><label for="example-input-url">Url:</label> <input id="example-input-url" type=
-          "url" placeholder="Enter a url here" /></p>
-
-          <p><label for="example-input-color">Color:</label> <input id="example-inupt-color"
-          type="color" placeholder="#fff" /></p>
-
-          <p><label for="example-input-date">Date:</label> <input id="example-input-date" type=
-          "date" placeholder="date" /></p>
-
-          <p><label for="example-input-date-time">Date / Time:</label> <input id=
-          "example-input-date-time" type="datetime" placeholder="date / time" /></p>
-
-          <p><label for="example-input-date-time-local">Date / Time local:</label> <input id=
-          "example-input-date-time-local" type="datetime-local" placeholder=
-          "date / time local" /></p>
-
-          <p><label for="example-input-month">Month:</label> <input id="example-input-month"
-          type="month" placeholder="Month" /></p>
-
-          <p><label for="example-input-week">Week:</label> <input id="example-input-week" type=
-          "week" placeholder="Week" /></p>
-
-          <p><label for="example-input-time">Time:</label> <input id="example-input-time" type=
-          "time" placeholder="Time" /></p>
-          <p><label for="example-textarea">Example textarea:</label>
-          <textarea id="example-textarea" rows="3">
-      </textarea></p>
-        <p><label for="example-input-file">Pure css file input:</label> <input id="example-input-file"
-        type="file" /></p>
-          <hr/>
-          <h3 id="select-box">Select Box</h3>
-          <label for="example-select2">Pure Css Select-box!</label>
-          <div class="select-box">
-            <select id="example-select1">
-              <option>
-                Goldenrod
-              </option>
-
-              <option>
-                Dodgerblue
-              </option>
-
-              <option>
-                Tomato
-              </option>
-
-              <option>
-                Orange
-              </option>
-
-              <option>
-                Rebeccapurple
-              </option>
-            </select>
-          </div>
-
-          <p><label for="example-select2">Example multiple select</label> <select id=
-          "example-select2" multiple="multiple">
-            <option>
-              Democrat
-            </option>
-
-            <option>
-              Rebublican
-            </option>
-
-            <option>
-              Green
-            </option>
-
-            <option>
-              Libertarian
-            </option>
-
-            <option>
-              Whig
-            </option>
-          </select></p>
-          <hr>
-
-
-
-
-          <div>
-            <h3 id="checkbox">Checkbox</h3>
-
-            <div>
-              <input id="1" type="checkbox" name="layout" value="option1" /> <label class=
-              "pull-right text" for="1">Praesent commodo cursus magna, vel scelerisque nisl
-              consectetur et. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-              Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed
-              consectetur.</label>
-            </div>
-
-            <div>
-              <input id="2" type="checkbox" name="layout" checked="checked" /> <label class=
-              "pull-right text" for="2">Checked</label>
-            </div>
-
-            <div>
-              <input id="3" type="checkbox" name="layout" value="option2" disabled=
-              "disabled" /> <label class="pull-right text" style="color: #ccc;" for=
-              "3">Disabled</label>
-            </div>
-
-            <div>
-              <input id="4" type="checkbox" name="layout" checked="checked" disabled=
-              "disabled" /> <label class="pull-right text" style="color: #ccc;" for="4">Checked
-              &amp;&amp; Disabled</label>
-            </div>
-          </div>
-          <hr>
-          <div>
-            <h3 id="radio">Radio</h3>
-
-            <div>
-              <input id="11" type="radio" name="radio" value="option1" /> <label for=
-              "11">Normal</label>
-            </div>
-
-            <div>
-              <input id="22" type="radio" name="radio" value="option2" checked="checked" />
-              <label for="22">Checked</label>
-            </div>
-
-            <div>
-              <input id="33" type="radio" value="option2" disabled="disabled" /> <label for=
-              "33" style="color: #ccc;">Disabled</label>
-            </div>
-
-            <div>
-              <input id="44" type="radio" value="option2" disabled="disabled" checked=
-              "checked" /> <label for="44" style="color: #ccc;">Checked &amp;&amp;
-              Disabled</label>
-            </div>
-          </div>
-          <hr>
-          <p><button type="button" name="button">Button</button> <input type="button" name=
-          "input" value="Input Button" /> <input type="submit" name="submit" value=
-          "Submit Button" /> <input type="reset" name="reset" value="Reset Button" /></p>
-        </form>
-
-    </section>
+    </header>
+    <div class="container">
+      <div class="intro">Axis is a terse, modular &amp; powerful css utility library built on top of <span><strike>Stylus</strike> </span> <a href="http://postcss.org/">PostCSS</a> and <a href="http://cssnext.io/">cssnext</a>.</div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="feature">
+        <article>
+          <h4>Jumpstart Styling</h4>
+          <p>With the powerful settings file you can orem ipsum dolor sit amet, consectetur adipiscing elit. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+        </article>
+        <figure>screenshot or code here</figure>
+      </div>
+      <div class="feature">
+        <article>
+          <h4>Feature #2</h4>
+          <p>Dipiscing elit. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+        </article>
+        <figure>screenshot or code here</figure>
+      </div>
+      <div class="feature">
+        <article>
+          <h4>Feature #3</h4>
+          <p>Magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+        </article>
+        <figure>screenshot or code here</figure>
+      </div>
+    </div>
+    <div class="container">
+      <div class="next-up">
+        <p>Ready to get started?</p>
+        <a href="" class="btn">Quick Start Guide</a> <a href="" class="btn outline">Get the code</a>
+      </div>
+    </div>
+    <hr>
+    <footer>
+      <small>* Read more about the changes <a href="#">here</a>.</small>
+    </footer>
     </block>
 </extends>
