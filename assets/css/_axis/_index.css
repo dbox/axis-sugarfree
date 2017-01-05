@@ -8,6 +8,7 @@
 @import '_button.css';
 @import '_forms.css';
 @import '_reset.css';
+@import '_tables.css';
 
 :root {
   --axis-framework {
@@ -17,5 +18,6 @@
     @apply --forms;
     @apply --buttons;
     @apply --layout;
+    @apply --tables;    
   }
 }

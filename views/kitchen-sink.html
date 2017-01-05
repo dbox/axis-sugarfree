@@ -21,6 +21,7 @@
         <li><a href="#select-box">select</a></li>
         <li><a href="#checkbox">checkbox</a></li>
         <li><a href="#radio">radio</a></li>
+        <li><a href="#table">basic table</a></li>
       </ul>
     </aside>
 
@@ -130,15 +131,15 @@
           <li>so cool to be</li>
 
           <li>the list that I am</li>
-        </ul>
+        </ul><hr />
 
         <h3 id="button">button</h3><a class="btn">Click me</a> <a class="btn large">Bigger Button</a>
-        <a class="btn small">Smaller button</a>
+        <a class="btn small">Smaller button</a><hr />
 
         <h3 id="outline-button">outline button</h3><a class="btn outline">Click me</a> <a class=
-        "btn large outline">Bigger Button</a> <a class="btn small outline">Smaller button</a>
+        "btn large outline">Bigger Button</a> <a class="btn small outline">Smaller button</a><hr />
 
-        <h3 id="disabled-button">disabled button</h3><a class="btn disabled">Don&rsquo;t click me</a><br />
+        <h3 id="disabled-button">disabled button</h3><a class="btn disabled">Don&rsquo;t click me</a><hr />
 
         <h3 id="interaction">Interaction</h3><a class="btn down">click down</a> <a class="btn inset">click
         inset</a> <a class="btn shrink">click shrink</a> <a class="btn hover-pop">hover-pop</a>
@@ -197,7 +198,7 @@
         type="file" /></p>
           <hr/>
           <h3 id="select-box">Select Box</h3>
-          <label for="example-select2">Pure Css Select-box!</label>
+          <label for="example-select2">Pure Css Select-box! 🎉</label>
           <div class="select-box">
             <select id="example-select1">
               <option>
@@ -222,7 +223,7 @@
             </select>
           </div>
 
-          <p><label for="example-select2">Example multiple select</label> <select id=
+          <!-- <p><label for="example-select2">Example multiple select</label> <select id=
           "example-select2" multiple="multiple">
             <option>
               Democrat
@@ -243,7 +244,7 @@
             <option>
               Whig
             </option>
-          </select></p>
+          </select></p> -->
           <hr>
 
 
@@ -307,7 +308,73 @@
           "input" value="Input Button" /> <input type="submit" name="submit" value=
           "Submit Button" /> <input type="reset" name="reset" value="Reset Button" /></p>
         </form>
+        <hr>
+        <h3 id="table">Basic Table</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Function</th>
 
+              <th>AAC</th>
+
+              <th>AC3/EAC3</th>
+
+              <th>DTS</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Decode/Passthrough</td>
+
+              <td>Decode<sup>1</sup></td>
+
+              <td>Decode<sup>2</sup></td>
+
+              <td>Passthrough</td>
+            </tr>
+
+            <tr>
+              <td>Sampling Rate</td>
+
+              <td>44.1 Khz, 48 Khz</td>
+
+              <td>48Khz</td>
+
+              <td>Passthrough</td>
+            </tr>
+
+            <tr>
+              <td>Sample Size</td>
+
+              <td>16-bit</td>
+
+              <td>16-bit</td>
+
+              <td>Passthrough</td>
+            </tr>
+
+            <tr>
+              <td>Bit rate</td>
+
+              <td>32-256 Kbps</td>
+
+              <td>96-768 Kbps</td>
+
+              <td>Passthrough</td>
+            </tr>
+
+            <tr>
+              <td>Number of Channels</td>
+
+              <td>2.0</td>
+
+              <td>2.0, 5.1, 7.1, Atmos</td>
+
+              <td>Passthrough</td>
+            </tr>
+          </tbody>
+        </table>
     </section>
     </block>
 </extends>
