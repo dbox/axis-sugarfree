@@ -38,7 +38,7 @@
   /* the button, smaller */
   --button-small {
     @apply --button-base;
-    padding: calc(var(--button-small-size) * .6) calc(var(--button-small-size) * .8);
+    padding: calc(var(--button-small-size) * .6) calc(var(--button-small-size) * .8) calc(var(--button-small-size) * .5);
     font-size: var(--button-small-size);
   }
 
