@@ -31,7 +31,7 @@
   /* the button ,larger */
   --button-large {
     @apply --button-base;
-    padding: calc(var(--button-large-size) * .6) calc(var(--button-large-size) * .8);
+    padding: calc(var(--button-large-size) * .6) calc(var(--button-large-size));
     font-size: var(--button-large-size);
   }
 

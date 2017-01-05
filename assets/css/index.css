@@ -160,6 +160,19 @@ main {
     height: 400px;
   }
 }
+
+.next-up {
+  margin-bottom: 90px;
+
+  & .btn:last-child {
+    margin-left: 10px;
+  }
+}
+
+footer {
+  max-width: 1100px;
+  margin: 0 auto;
+}
 aside {
   width: 200px;
   position: relative;
