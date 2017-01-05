@@ -216,6 +216,14 @@ aside {
   overflow-y: auto;
 }
 
+aside div {
+  padding: 12% 25%;
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 aside ul {
   @apply --reset-list;
   width: 200px;
@@ -246,9 +254,9 @@ label {
 textarea {
   width: 400px;
 }
-p a, div a, blockquote a{
+/*p a, div a, blockquote a{
   @apply --hover-underline;
-}
+}*/
 
 .ellipsis {
   @apply --ellipsis;

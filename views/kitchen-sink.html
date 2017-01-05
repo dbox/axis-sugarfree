@@ -1,6 +1,9 @@
 <extends src='layout.html'>
   <block name='content'>
     <aside class="">
+      <div class="">
+        <a href="../"><img src="img/axis-logo.svg" alt=""></a>
+      </div>
       <ul>
         <li><a href="#headings">headings</a></li>
         <li><a href="#paragraph">paragraph</a></li>
@@ -161,7 +164,12 @@ pre {
           </div>
         </div>
         <hr />
-
+        <h3 id="disabled-button">Disabled button</h3>
+        <a href="#" class="btn disabled">Do NOT click me</a>
+        <hr>
+        <h3 id="interaction">Interaction</h3>
+        <a href="#interaction" class="btn inset">Click inset</a><a href="#interaction" class="btn down ">Click down</a><a href="#interaction" class="btn shrink ">Click shrink</a><a href="#interaction" class="btn hover-pop ">Hover pop</a>
+        <hr>
         <h3 id="inputs">Form inputs</h3>
 
         <form>
