@@ -1,4 +1,5 @@
 @import '_axis/_index.css';
+@import '_settings.css';
 
 @apply --axis-framework;
 
@@ -33,6 +34,7 @@ main {
   justify-content: center;
   padding: 5rem 0;
 
+
   & h2 {
     font-size: .8rem;
     line-height: 1rem;
@@ -42,12 +44,24 @@ main {
   & ul {
     @apply --reset-list;
     display: flex;
+    flex-wrap: wrap;
+    padding: 0 5%;
+
 
     & li {
+      @media (--medium) {
+        width: calc(50% - 10px);
+        &:nth-child(odd) {
+          margin-right: 20px;
+        }
+      }
+    }
 
-
-      &:not(:last-child) {
-        margin-right: 20px;
+    & li {
+      @media (--above-medium) {
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
       }
 
       & a {
@@ -58,10 +72,15 @@ main {
         justify-content: center;
         background: rgba(0,0,0, .2);
         font-size: .85rem;
-        width: 160px;
-        height: 160px;
+        width: 100%;
         color: inherit;
         border-radius: var(--global-border-radius);
+        margin-bottom: 20px;
+        padding: 20px 0;
+
+        @media (--above-medium) {
+          padding: 40px 0;
+        }
 
         &:hover {
           background-color: #fff;
@@ -74,9 +93,14 @@ main {
         & span {
           width: 70px;
           height: 70px;
-          margin-bottom: 10px;
+          margin: 0 60px 10px;
           background-image: url('../img/nav-sprite.png');
           background-size: 400% auto;
+
+          @media (--medium) {
+            transform: scale(.7);
+            margin-bottom: 0;
+          }
 
         }
       }
@@ -208,14 +232,6 @@ section {
   margin-left: 200px;
 }
 
-/*Example overwrite defaults:*/
-:root {
-  /*--label-display: block;*/
-  --label-align: left;
-  --label-min-width: 200px;
-  --input-min-width: 200px;
-  --heading-size-multiplier: 1.2;
-}
 
 label {
   padding-right: 10px;

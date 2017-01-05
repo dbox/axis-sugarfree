@@ -1,0 +1,21 @@
+/* Overwrite Axis Defaults */
+
+:root {
+  /*--label-display: block;*/
+  --label-align: left;
+  --label-min-width: 200px;
+  --input-min-width: 200px;
+  --heading-size-multiplier: 1.2;
+}
+
+/* mqs */
+@custom-media --small (width < 768px);
+@custom-media --above-small (width >= 768px);
+@custom-media --medium (width < 960px);
+@custom-media --above-medium (width >= 960px);
+@custom-media --large (width < 1024px);
+@custom-media --above-large (width >= 1024px);
+@custom-media --x-large (width < 1280px);
+@custom-media --above-x-large (width >= 1280px);
+@custom-media --max-width (width < 1600px);
+@custom-media --above-max-width (width >= 1600px);
