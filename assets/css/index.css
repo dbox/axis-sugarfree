@@ -195,7 +195,7 @@ main {
 
 footer {
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 aside {
   width: 200px;
