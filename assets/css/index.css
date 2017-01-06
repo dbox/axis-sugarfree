@@ -1,12 +1,8 @@
 @import '_axis/_index.css';
 @import '_settings.css';
+@import '_animation.css';
 
 @apply --axis-framework;
-
-
-main {
-  /*display: flex;*/
-}
 
 .github-badge {
   position: absolute;
@@ -21,6 +17,7 @@ main {
   color: rgba(#fff, .4);
   font-size: 14px;
 }
+
 .container {
   text-align: center;
 }
@@ -33,7 +30,6 @@ main {
   align-items: center;
   justify-content: center;
   padding: 5rem 0;
-
 
   & h2 {
     font-size: .8rem;
@@ -49,8 +45,13 @@ main {
 
 
     & li {
+      @apply --animated;
+      animation-name: fade-in-up;
+      margin-bottom: 20px;
+
       @media (--medium) {
         width: calc(50% - 10px);
+
         &:nth-child(odd) {
           margin-right: 20px;
         }
@@ -75,7 +76,7 @@ main {
         width: 100%;
         color: inherit;
         border-radius: var(--global-border-radius);
-        margin-bottom: 20px;
+
         padding: 20px 0;
 
         @media (--above-medium) {
@@ -144,6 +145,15 @@ main {
     flex-basis: 205px;
   }
 }
+
+/*iterate animtion for header lis*/
+
+@for $i from 1 to 4 {
+    .hero ul li:nth-child($i) {
+      animation-delay: calc($i * .2s);
+    }
+}
+
 .intro {
   font-weight: 300;
   font-size: 26px;
@@ -254,7 +264,7 @@ label {
 textarea {
   width: 400px;
 }
-p a, blockquote a{
+p a, blockquote a, .intro a {
   @apply --hover-underline;
 }
 

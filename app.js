@@ -1,6 +1,7 @@
 const htmlStandards = require('spike-html-standards')
 const cssStandards = require('spike-css-standards')
 const latest = require('babel-preset-latest')
+const postcssFor = require('postcss-for')
 
 module.exports = {
   devtool: 'source-map',
@@ -13,7 +14,9 @@ module.exports = {
     })
   },
   postcss: (ctx) => {
-    return cssStandards({ parser: false, webpack: ctx })
+    const css = cssStandards({ parser: false, webpack: ctx })
+    css.plugins.push(postcssFor())
+    return css
   },
   babel: { presets: [latest] }
 }

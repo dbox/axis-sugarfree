@@ -1,0 +1,33 @@
+:root {
+  --animation-duration: .65s;
+  --animation-easing: ease-out-quad;
+
+  --animated {
+    animation-duration: var(--animation-duration);
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-timing-function: var(--animation-easing);
+  }
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 15%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+ }
+
+  100% {
+    opacity: 1;
+  }
+}
