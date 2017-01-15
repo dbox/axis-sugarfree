@@ -1,6 +1,19 @@
+/*@import '../../../axis/axis/_index.css';*/
 @import 'axis';
 @import '_settings.css';
 @import '_animation.css';
+
+/*html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}*/
+
+body {
+  margin: 0;
+}
 
 @apply --axis-framework;
 
@@ -139,11 +152,11 @@
   }
 }
 .form-flex {
-  display: flex;
+  /*display: flex;
 
   & *:first-child {
     flex-basis: 205px;
-  }
+  }*/
 }
 
 /*iterate animtion for header lis*/
