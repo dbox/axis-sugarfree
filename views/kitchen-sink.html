@@ -24,7 +24,7 @@
         <li><a href="#select-box">select</a></li>
         <li><a href="#checkbox">checkbox</a></li>
         <li><a href="#radio">radio</a></li>
-        <li><a href="#table">basic table</a></li>
+        <li><a href="#table">tables</a></li>
       </ul>
     </aside>
 
@@ -61,11 +61,17 @@
         </div>
         <hr />
 
-        <h3 id="pre">pre</h3>
-        <pre>
+        <h3 id="pre" retext-skip>pre</h3>
+        <pre retext-skip>
 /* This is so meta */
 pre {
   @apply --pre;
+}</pre>
+        <pre retext-skip class="pre-dark">
+/* Sometimes you may like a darker theme for code: */
+pre {
+  @apply --pre;
+  @apply --pre-dark;
 }</pre>
         <hr />
 
@@ -336,72 +342,153 @@ pre {
           "Submit Button" /> <input type="reset" name="reset" value="Reset Button" /></p>
         </form>
         <hr>
-        <h3 id="table">Basic Table</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Function</th>
+        <h3 id="table">Tables</h3>
+        <br>
+        <h5>Basic Table</h5>
+        <hr>
+        <div class="responsive-overflow">
+          <table class="basic-table">
+            <thead>
+              <tr>
+                <th>Function</th>
 
-              <th>AAC</th>
+                <th>AAC</th>
 
-              <th>AC3/EAC3</th>
+                <th>AC3/EAC3</th>
 
-              <th>DTS</th>
-            </tr>
-          </thead>
+                <th>DTS</th>
+              </tr>
+            </thead>
 
-          <tbody>
-            <tr>
-              <td>Decode/Passthrough</td>
+            <tbody>
+              <tr>
+                <td>Decode/Passthrough</td>
 
-              <td>Decode<sup>1</sup></td>
+                <td>Decode<sup>1</sup></td>
 
-              <td>Decode<sup>2</sup></td>
+                <td>Decode<sup>2</sup></td>
 
-              <td>Passthrough</td>
-            </tr>
+                <td>Passthrough</td>
+              </tr>
 
-            <tr>
-              <td>Sampling Rate</td>
+              <tr>
+                <td>Sampling Rate</td>
 
-              <td>44.1 Khz, 48 Khz</td>
+                <td>44.1 Khz, 48 Khz</td>
 
-              <td>48Khz</td>
+                <td>48Khz</td>
 
-              <td>Passthrough</td>
-            </tr>
+                <td>Passthrough</td>
+              </tr>
 
-            <tr>
-              <td>Sample Size</td>
+              <tr>
+                <td>Sample Size</td>
 
-              <td>16-bit</td>
+                <td>16-bit</td>
 
-              <td>16-bit</td>
+                <td>16-bit</td>
 
-              <td>Passthrough</td>
-            </tr>
+                <td>Passthrough</td>
+              </tr>
 
-            <tr>
-              <td>Bit rate</td>
+              <tr>
+                <td>Bit rate</td>
 
-              <td>32-256 Kbps</td>
+                <td>32-256 Kbps</td>
 
-              <td>96-768 Kbps</td>
+                <td>96-768 Kbps</td>
 
-              <td>Passthrough</td>
-            </tr>
+                <td>Passthrough</td>
+              </tr>
 
-            <tr>
-              <td>Number of Channels</td>
+              <tr>
+                <td>Number of Channels</td>
 
-              <td>2.0</td>
+                <td>2.0</td>
 
-              <td>2.0, 5.1, 7.1, Atmos</td>
+                <td>2.0, 5.1, 7.1, Atmos</td>
 
-              <td>Passthrough</td>
-            </tr>
-          </tbody>
-        </table>
+                <td>Passthrough</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+        <h5 id="minimal-table">Minimal Table</h5>
+        <hr>
+        <div class="responsive-overflow">
+          <table class="minimal-table">
+            <thead>
+              <tr>
+                <th>Function</th>
+
+                <th>AAC</th>
+
+                <th>AC3/EAC3</th>
+
+                <th>DTS</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Decode/Passthrough</td>
+
+                <td>Decode<sup>1</sup></td>
+
+                <td>Decode<sup>2</sup></td>
+
+                <td>Passthrough</td>
+              </tr>
+
+              <tr>
+                <td>Sampling Rate</td>
+
+                <td>44.1 Khz, 48 Khz</td>
+
+                <td>48Khz</td>
+
+                <td>Passthrough</td>
+              </tr>
+
+              <tr>
+                <td>Sample Size</td>
+
+                <td>16-bit</td>
+
+                <td>16-bit</td>
+
+                <td>Passthrough</td>
+              </tr>
+
+              <tr>
+                <td>Bit rate</td>
+
+                <td>32-256 Kbps</td>
+
+                <td>96-768 Kbps</td>
+
+                <td>Passthrough</td>
+              </tr>
+
+              <tr>
+                <td>Number of Channels</td>
+
+                <td>2.0</td>
+
+                <td>2.0, 5.1, 7.1, Atmos</td>
+
+                <td>Passthrough</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br>
+        <h5>Table utilities</h5>
+        <hr>
+        <p md>Zebra stripe `@apply --zebra-stripe;`</p>
+        <p md>Hover rows `@apply --hover-rows`</p>
+        <p md>Responsive Table `@apply --responsive-overflow;`  - Must be called on containing div.</p>
     </section>
     </block>
 </extends>
