@@ -49,7 +49,12 @@
     }
   }
 }
-
+.flex-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 .minimal-table {
   @apply --table-minimal;
   @apply --hover-rows;
