@@ -7,19 +7,19 @@
   --input-min-width: 200px;
   --heading-size-multiplier: 1.2;
   --heading-font-weight: 400;
+  /*Tables*/
+  --table-radius: 4px;
+  --table-border: var(--default-border);
 
-  /*default breakpoint for axis mixins. For a more robust breakpoint library see xxx.*/
-  --pre {
+  --code {
     background-color: color(var(--base-gray) lightness(96%));
-    border: 1px solid color(var(--base-gray) lightness(80%));
+    border: 1px solid color(var(--base-gray) lightness(85%));
     border-radius: var(--global-border-radius);
-    display: block;
+    color: black;
     font-family: var(--monospace);
-    font-size: inherit !important;
-    line-height: var(--line-height) !important;
-    margin: 0 0 1rem;
-    padding: .5rem .8rem;
-    white-space: pre-wrap;
+    font-size: 2.72rem;
+    padding: .08rem .3rem;
+    white-space: normal;
   }
 }
 

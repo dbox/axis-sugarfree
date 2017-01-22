@@ -62,12 +62,12 @@
         <hr />
 
         <h3 id="pre" retext-skip>pre</h3>
-        <pre retext-skip>
+        <pre retext-skip="true">
 /* This is so meta */
 pre {
   @apply --pre;
 }</pre>
-        <pre retext-skip class="pre-dark">
+        <pre retext-skip="true" class="pre-dark">
 /* Sometimes you may like a darker theme for code: */
 pre {
   @apply --pre;
@@ -346,6 +346,16 @@ pre {
         <br>
         <h5>Basic Table</h5>
         <hr>
+        <table class="basic-table">
+          <tr>
+            <td>i'm a tabley</td>
+            <td>wassup</td>
+          </tr>
+          <tr>
+            <td>me too</td>
+            <td>me three</td>
+          </tr>
+        </table>
         <div class="responsive-overflow">
           <table class="basic-table">
             <thead>
@@ -483,7 +493,6 @@ pre {
             </tbody>
           </table>
         </div>
-        <br>
         <h5>Table utilities</h5>
         <hr>
         <p md>Zebra stripe `@apply --zebra-stripe;`</p>
