@@ -23,10 +23,6 @@
   right: 20px;
 }
 
-div + div {
-  margin-top: 1.5rem;
-}
-
 .basic-table {
   @apply --table-basic;
   @apply --zebra-stripes;
