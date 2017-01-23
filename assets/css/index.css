@@ -3,7 +3,7 @@
 @import '_settings.css';
 @import '_animation.css';
 
-/*@apply --sanitize;*/
+@apply --sanitize;
 @apply --typography;
 @apply --code-blocks;
 @apply --forms;
@@ -12,9 +12,6 @@
 /*@apply --tables;*/
 
 
-table {
-  margin: 0 0 1.5rem 0 !important;
-}
 .pre-dark {
   @apply --pre;
   @apply --pre-dark;
@@ -33,7 +30,6 @@ div + div {
 .basic-table {
   @apply --table-basic;
   @apply --zebra-stripes;
-  margin: 0;
 }
 
 .responsive-overflow {
@@ -234,7 +230,6 @@ div + div {
   & figure {
     border-radius: 5px;
     width: 60%;
-    margin: 0;
     background: #282c34;
     height: 400px;
   }
