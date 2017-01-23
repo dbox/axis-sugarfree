@@ -8,7 +8,7 @@
   },
   "bugs": "https://github.com/dbox/axis-sugarfree/issues",
   "dependencies": {
-    "axis": "../axis",
+    "axis": "github:dbox/axis",
     "babel-preset-latest": "^6.14.0",
     "postcss-for": "2.1.1",
     "spike": "^0.12.1",
