@@ -11,7 +11,11 @@
 @apply --layout;
 /*@apply --tables;*/
 
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
 
+/*.btn {
+  margin-right: 3px;
+}*/
 .pre-dark {
   @apply --pre;
   @apply --pre-dark;
@@ -169,12 +173,12 @@
     }
   }
 }
-.form-flex {
-  /*display: flex;
 
-  & *:first-child {
-    flex-basis: 205px;
-  }*/
+label {
+  line-height: 1.5rem;
+}
+.form-flex {
+  margin-top: .75rem;
 }
 
 /*iterate animtion for header lis*/
@@ -291,10 +295,9 @@ section {
 label {
   padding-right: 10px;
 }
-textarea {
-  width: 400px;
-}
-p a, blockquote a, .intro a {
+
+/*Todo add default underlines to axis*/
+p a, blockquote a, .intro a, :--heading a{
   @apply --hover-underline;
 }
 
