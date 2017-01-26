@@ -1,10 +1,5 @@
 /* Overwrite Axis Defaults */
 
-:root {
---heading-font-weight: 500;
-
-}
-
 /* mqs */
 @custom-media --small (width < 768px);
 @custom-media --above-small (width >= 768px);
@@ -16,3 +11,7 @@
 @custom-media --above-x-large (width >= 1280px);
 @custom-media --max-width (width < 1600px);
 @custom-media --above-max-width (width >= 1600px);
+
+:root {
+  --input-select-max-width: 200px;
+}

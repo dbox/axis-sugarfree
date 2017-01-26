@@ -3,7 +3,7 @@
 @import '_settings.css';
 @import '_animation.css';
 
-@apply --sanitize;
+@apply --reset-elements;
 @apply --typography;
 @apply --code-blocks;
 @apply --forms;
@@ -13,14 +13,13 @@
 
 @custom-selector :--heading h1, h2, h3, h4, h5, h6;
 
-/*.btn {
-  margin-right: 3px;
-}*/
 .pre-dark {
   @apply --pre;
   @apply --pre-dark;
 }
-
+.select-box {
+  max-width: 200px;
+}
 .github-badge {
   position: absolute;
   top: 20px;
@@ -297,7 +296,7 @@ label {
 }
 
 /*Todo add default underlines to axis*/
-p a, blockquote a, .intro a, :--heading a{
+p a, blockquote a, .intro a, :--heading ¡a{
   @apply --hover-underline;
 }
 
